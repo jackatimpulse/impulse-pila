@@ -75,6 +75,9 @@ html, body {
 
 .hero-text {
   max-width: 380px;
+  text-align: center;
+  align-self: center;
+  width: 100%;
 }
 
 .hero-heading {
@@ -92,6 +95,7 @@ html, body {
   line-height: 1.6;
   color: var(--mid);
   max-width: 280px;
+  margin: 0 auto;
 }
 
 .hero-image-wrap {
