@@ -2,7 +2,7 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --off-white: #f7f6f3;
+  --off-white: #ffffff;
   --black: #111110;
   --mid: #6b6b68;
   --border: #e2e1de;
@@ -134,17 +134,18 @@ html, body {
 }
 
 .product-image-wrap {
-  width: min(280px, 44vw);
+  width: min(340px, 52vw);
   aspect-ratio: 4/3;
   border-radius: 10px;
   overflow: hidden;
-  background: #e8e5e0;
+  background: #f0eeeb;
 }
 
-/* Pila webp has its own background — fill edge-to-edge */
 .panel--pila .product-image-wrap {
-  background: transparent;
-  border-radius: 0;
+  width: min(400px, 58vw);
+  aspect-ratio: 4/3;
+  border-radius: 10px;
+  background: #f0eeeb;
 }
 
 .product-image {
@@ -153,12 +154,12 @@ html, body {
   object-fit: contain;
   object-position: center;
   display: block;
-  padding: 16px;
+  padding: 24px;
 }
 
 .panel--pila .product-image {
-  padding: 0;
-  object-fit: cover;
+  padding: 24px;
+  object-fit: contain;
 }
 
 .product-body {
