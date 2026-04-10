@@ -134,11 +134,17 @@ html, body {
 }
 
 .product-image-wrap {
-  width: min(260px, 40vw);
+  width: min(280px, 44vw);
   aspect-ratio: 4/3;
   border-radius: 10px;
   overflow: hidden;
-  background: #e0ddd7;
+  background: #e8e5e0;
+}
+
+/* Pila webp has its own background — fill edge-to-edge */
+.panel--pila .product-image-wrap {
+  background: transparent;
+  border-radius: 0;
 }
 
 .product-image {
@@ -148,6 +154,11 @@ html, body {
   object-position: center;
   display: block;
   padding: 16px;
+}
+
+.panel--pila .product-image {
+  padding: 0;
+  object-fit: cover;
 }
 
 .product-body {
