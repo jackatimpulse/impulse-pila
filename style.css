@@ -122,29 +122,42 @@ html, body {
   background: linear-gradient(135deg, #c8c3b8 0%, #b5b0a5 50%, #c2bdb2 100%);
 }
 
-/* ─── Panel 2 & 3: Product ─────────────────────────────────────────── */
-.panel--product {
+/* ─── Panel 2: Products side by side ───────────────────────────────── */
+.panel--products {
+  justify-content: center;
+  align-items: stretch;
+  gap: 0;
+  border-left: 1px solid var(--border);
+}
+
+.product-card {
+  flex: 1;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 28px;
   text-align: center;
   padding: 40px 48px;
-  border-left: 1px solid var(--border);
+}
+
+.product-divider {
+  width: 1px;
+  background: var(--border);
+  align-self: stretch;
+  flex-shrink: 0;
 }
 
 .product-image-wrap {
-  width: min(340px, 52vw);
+  width: min(300px, 38vw);
   aspect-ratio: 4/3;
   border-radius: 10px;
   overflow: hidden;
   background: #f0eeeb;
 }
 
-.panel--pila .product-image-wrap {
-  width: min(400px, 58vw);
-  aspect-ratio: 4/3;
-  border-radius: 10px;
+/* Pila image has its own background */
+.product-card:first-child .product-image-wrap {
   background: transparent;
 }
 
@@ -157,27 +170,22 @@ html, body {
   padding: 24px;
 }
 
-.panel--pila .product-image {
-  padding: 24px;
-  object-fit: contain;
-}
-
 .product-body {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 14px;
-  max-width: 320px;
+  max-width: 280px;
 }
 
 .product-wordmark {
-  font-size: clamp(26px, 3.5vw, 42px);
+  font-size: clamp(22px, 2.8vw, 38px);
   letter-spacing: -0.01em;
   line-height: 1;
 }
 
 .pila-logo {
-  width: min(120px, 28vw);
+  width: min(100px, 22vw);
   height: auto;
   display: block;
 }
