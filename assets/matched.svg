@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="600" height="500">
+  <defs>
+    <linearGradient id="mbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c8c2b8"/>
+      <stop offset="100%" stop-color="#a8a098"/>
+    </linearGradient>
+    <linearGradient id="apron" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2a2a2a"/>
+      <stop offset="100%" stop-color="#1a1a1a"/>
+    </linearGradient>
+    <linearGradient id="mred" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e04444"/>
+      <stop offset="100%" stop-color="#b83232"/>
+    </linearGradient>
+  </defs>
+  <!-- Background - warm kitchen -->
+  <rect width="600" height="500" fill="url(#mbg)"/>
+  <!-- Shelving/cabinet back -->
+  <rect x="0" y="0" width="600" height="240" fill="#c0b9b0"/>
+  <!-- Shelf -->
+  <rect x="0" y="60" width="600" height="8" fill="#a8a098"/>
+  <rect x="0" y="140" width="600" height="8" fill="#a8a098"/>
+  <!-- Items on shelf (abstract) -->
+  <rect x="40" y="20" width="30" height="40" fill="#888" rx="3" opacity="0.5"/>
+  <rect x="80" y="30" width="20" height="30" fill="#777" rx="2" opacity="0.5"/>
+  <rect x="500" y="15" width="35" height="45" fill="#999" rx="3" opacity="0.5"/>
+  <!-- Green plant suggestion -->
+  <circle cx="540" cy="60" r="22" fill="#5a8a4a" opacity="0.7"/>
+  <circle cx="555" cy="70" r="16" fill="#4a7a3a" opacity="0.7"/>
+  <!-- Counter -->
+  <rect x="0" y="320" width="600" height="180" fill="#3a332e"/>
+  <!-- Pila battery on counter (red) - recognizable shape -->
+  <rect x="60" y="230" width="110" height="160" fill="url(#mred)" rx="6"/>
+  <rect x="68" y="238" width="94" height="144" fill="#cc3333" rx="4"/>
+  <!-- Battery details -->
+  <rect x="80" y="260" width="70" height="8" fill="#e88" rx="2" opacity="0.6"/>
+  <rect x="80" y="274" width="55" height="8" fill="#e88" rx="2" opacity="0.6"/>
+  <circle cx="110" cy="310" r="18" fill="#b82222" stroke="#cc4444" stroke-width="2"/>
+  <!-- Chef (silhouette) -->
+  <ellipse cx="340" cy="180" rx="45" ry="55" fill="#e8e0d4"/><!-- head/torso light -->
+  <rect x="295" y="200" width="90" height="200" fill="url(#apron)" rx="4"/><!-- apron -->
+  <rect x="302" y="210" width="76" height="10" fill="#444" rx="2"/><!-- apron strap -->
+  <!-- Arm holding pan -->
+  <rect x="340" y="230" width="120" height="22" fill="#d4cbc0" rx="10" transform="rotate(-15 340 230)"/>
+  <!-- Pan -->
+  <ellipse cx="460" cy="222" rx="38" ry="12" fill="#2a2a2a"/>
+  <rect x="422" y="222" width="76" height="6" fill="#222"/>
+  <!-- Impulse cooktop on counter in front -->
+  <rect x="200" y="300" width="220" height="80" fill="#1e1e1e" rx="8"/>
+  <rect x="208" y="292" width="204" height="76" fill="#2a2a2a" rx="6"/>
+  <!-- Cooktop burner rings -->
+  <circle cx="268" cy="328" r="30" fill="none" stroke="#444" stroke-width="2.5"/>
+  <circle cx="268" cy="328" r="18" fill="none" stroke="#555" stroke-width="1.5"/>
+  <circle cx="358" cy="328" r="30" fill="none" stroke="#444" stroke-width="2.5"/>
+  <circle cx="358" cy="328" r="18" fill="none" stroke="#555" stroke-width="1.5"/>
+</svg>

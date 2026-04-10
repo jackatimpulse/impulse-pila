@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Impulse × Pila — Stay Cooking, Longer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Fixed nav -->
+  <nav class="nav">
+    <span class="nav-logo">
+      <span class="logo-impulse">impulse</span>
+      <span class="logo-separator"> </span>
+      <span class="logo-pila">pila</span>
+    </span>
+  </nav>
+
+  <!-- Horizontal scroll track -->
+  <div class="scroll-track" id="scrollTrack">
+
+    <!-- Section 1: Hero -->
+    <section class="panel panel--hero">
+      <div class="hero-text">
+        <h1 class="hero-heading">Stay Cooking,&nbsp;Longer</h1>
+        <p class="hero-sub">Buy an Impulse induction cooktop and get $600&nbsp;off a Pila home battery. Keep your kitchen running&nbsp;— even when the grid goes&nbsp;down.</p>
+      </div>
+      <div class="hero-image-wrap">
+        <img src="assets/hero.svg" alt="Impulse induction cooktop on kitchen counter" class="hero-image" />
+      </div>
+    </section>
+
+    <!-- Section 2: Pila product -->
+    <section class="panel panel--product panel--pila">
+      <div class="product-image-wrap">
+        <img src="assets/pila.svg" alt="Pila home battery" class="product-image" />
+      </div>
+      <div class="product-body">
+        <p class="product-wordmark product-wordmark--pila">pila</p>
+        <p class="product-desc">Buy an Impulse induction cooktop and get $600 off a Pila home battery. Keep your kitchen running — even when the grid goes down.</p>
+        <a href="#" class="btn">Visit Website</a>
+      </div>
+    </section>
+
+    <!-- Section 3: Impulse product -->
+    <section class="panel panel--product panel--impulse">
+      <div class="product-image-wrap">
+        <img src="assets/impulse.svg" alt="Impulse induction cooktop" class="product-image" />
+      </div>
+      <div class="product-body">
+        <p class="product-wordmark product-wordmark--impulse">impulse</p>
+        <p class="product-desc">Buy an Impulse induction cooktop and get $600 off a Pila home battery. Keep your kitchen running — even when the grid goes down.</p>
+        <a href="#" class="btn">Visit Website</a>
+      </div>
+    </section>
+
+    <!-- Section 4: Matched for Perfection -->
+    <section class="panel panel--matched">
+      <div class="matched-image-wrap">
+        <img src="assets/matched.svg" alt="Chef using Impulse cooktop with Pila battery" class="matched-image" />
+      </div>
+      <div class="matched-text">
+        <h2 class="matched-heading">Matched for Perfection</h2>
+        <p class="matched-sub">Buy an Impulse induction cooktop and get $600 off a Pila home battery. Keep your kitchen running — even when the grid goes down.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Progress indicator -->
+  <div class="progress-bar">
+    <div class="progress-fill" id="progressFill"></div>
+  </div>
+
+  <!-- Scroll hint -->
+  <div class="scroll-hint" id="scrollHint">
+    <span>scroll</span>
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+      <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

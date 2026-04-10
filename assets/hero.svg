@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c8c3ba"/>
+      <stop offset="100%" stop-color="#a89f94"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d44"/>
+      <stop offset="100%" stop-color="#a22"/>
+    </linearGradient>
+  </defs>
+  <!-- Room background -->
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <!-- Floor -->
+  <polygon points="0,320 800,300 800,500 0,500" fill="#b0a89c"/>
+  <!-- Wall panel right -->
+  <rect x="580" y="0" width="220" height="500" fill="#bfb9b1" opacity="0.6"/>
+  <!-- Red decorative panel -->
+  <rect x="200" y="60" width="80" height="380" fill="url(#panel)" rx="4"/>
+  <!-- Cooktop on counter -->
+  <rect x="300" y="280" width="280" height="8" fill="#1a1a1a" rx="2"/>
+  <rect x="280" y="288" width="320" height="40" fill="#222" rx="3"/>
+  <!-- Burners -->
+  <circle cx="360" cy="268" r="28" fill="none" stroke="#444" stroke-width="3"/>
+  <circle cx="360" cy="268" r="18" fill="none" stroke="#555" stroke-width="2"/>
+  <circle cx="460" cy="268" r="28" fill="none" stroke="#444" stroke-width="3"/>
+  <circle cx="460" cy="268" r="18" fill="none" stroke="#555" stroke-width="2"/>
+  <!-- Counter -->
+  <rect x="200" y="325" width="500" height="20" fill="#3a3530"/>
+  <!-- Window light -->
+  <rect x="580" y="40" width="160" height="200" fill="#e8dfc8" opacity="0.4" rx="2"/>
+</svg>
