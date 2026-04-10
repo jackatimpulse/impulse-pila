@@ -164,9 +164,10 @@ html, body {
   line-height: 1;
 }
 
-.product-wordmark--pila {
-  font-family: var(--font-sans);
-  font-weight: 300;
+.pila-logo {
+  width: min(120px, 28vw);
+  height: auto;
+  display: block;
 }
 
 .product-wordmark--impulse {
