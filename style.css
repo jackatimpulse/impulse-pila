@@ -155,8 +155,9 @@ html, body {
   background: #f0eeeb;
 }
 
-/* Pila image has its own background */
-.product-card:first-child .product-image-wrap {
+/* Pila and Impulse images have transparent backgrounds */
+.product-card:first-child .product-image-wrap,
+.product-card:last-child .product-image-wrap {
   background: transparent;
 }
 
