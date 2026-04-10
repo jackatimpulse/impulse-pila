@@ -38,17 +38,11 @@ html, body {
 
 .nav.scrolled { border-color: var(--border); }
 
-.nav-logo {
-  font-family: var(--font-sans);
-  font-size: 13px;
-  letter-spacing: 0.04em;
-  display: flex;
-  align-items: center;
-  gap: 6px;
+.nav-logo-img {
+  height: 20px;
+  width: auto;
+  display: block;
 }
-
-.logo-impulse { font-weight: 500; }
-.logo-pila    { font-weight: 400; color: var(--mid); }
 
 /* ─── Scroll Track ─────────────────────────────────────────────────── */
 .scroll-track {
