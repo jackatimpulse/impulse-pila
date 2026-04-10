@@ -189,11 +189,10 @@ html, body {
   display: block;
 }
 
-.product-wordmark--impulse {
-  font-family: var(--font-sans);
-  font-weight: 600;
-  text-transform: lowercase;
-  letter-spacing: -0.03em;
+.impulse-logo {
+  width: min(120px, 28vw);
+  height: auto;
+  display: block;
 }
 
 .product-desc {
