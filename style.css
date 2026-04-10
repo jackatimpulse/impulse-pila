@@ -103,6 +103,8 @@ html, body {
   flex: 1;
   max-height: calc(100vh - var(--nav-h) - 200px);
   background: transparent;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .hero-image {
