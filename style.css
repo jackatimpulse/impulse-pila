@@ -102,9 +102,7 @@ html, body {
   width: 100%;
   flex: 1;
   max-height: calc(100vh - var(--nav-h) - 200px);
-  border-radius: 12px;
-  overflow: hidden;
-  background: #d9d5cd;
+  background: transparent;
 }
 
 .hero-image {
@@ -321,6 +319,6 @@ html, body {
 }
 
 /* Image fallbacks (tinted placeholder backgrounds) */
-.hero-image-wrap    { background: linear-gradient(145deg, #ccc9c0, #b8b3a8); }
+.hero-image-wrap    { background: transparent; }
 .product-image-wrap { background: linear-gradient(145deg, #dedad4, #ccc8c0); }
 .matched-image-wrap { background: linear-gradient(145deg, #c8c3ba, #b5b0a6); }
