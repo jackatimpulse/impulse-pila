@@ -59,7 +59,6 @@ body {
 /* ─── Panels (shared) ──────────────────────────────────────────────── */
 .panel {
   width: 100%;
-  min-height: 100vh;
   display: flex;
   align-items: center;
 }
@@ -297,8 +296,7 @@ body {
 
 .matched-image-wrap {
   flex: 1;
-  height: 100%;
-  min-height: 100vh;
+  min-height: 60vh;
   overflow: hidden;
   background: #d0cbc3;
 }
