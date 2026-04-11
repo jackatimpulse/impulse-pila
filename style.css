@@ -186,7 +186,7 @@ body {
 }
 
 .impulse-logo {
-  width: min(120px, 28vw);
+  width: min(160px, 36vw);
   height: auto;
   display: block;
 }
