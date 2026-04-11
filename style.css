@@ -12,11 +12,14 @@
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-html, body {
+html {
   width: 100%;
-  height: 100%;
+  background: var(--off-white);
+}
+
+body {
+  width: 100%;
   overflow-x: hidden;
-  overflow-y: auto;
   background: var(--off-white);
   color: var(--black);
   font-family: var(--font-sans);
@@ -298,8 +301,8 @@ html, body {
 /* ─── Entrance animations ──────────────────────────────────────────── */
 .panel {
   opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+  transform: translateY(20px);
+  transition: opacity 0.6s var(--ease), transform 0.6s var(--ease);
 }
 
 .panel.visible {
@@ -307,9 +310,10 @@ html, body {
   transform: translateY(0);
 }
 
+/* Hero is always visible */
 .panel--hero {
-  opacity: 1;
-  transform: none;
+  opacity: 1 !important;
+  transform: none !important;
 }
 
 /* Image fallbacks */

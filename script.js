@@ -26,8 +26,8 @@
   function updateVisibility() {
     panels.forEach((panel) => {
       const rect = panel.getBoundingClientRect();
-      const inView = rect.top < window.innerHeight * 0.85 && rect.bottom > 0;
-      panel.classList.toggle('visible', inView);
+      const inView = rect.top < window.innerHeight && rect.bottom > 0;
+      if (inView) panel.classList.add('visible');
     });
   }
 
