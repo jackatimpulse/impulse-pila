@@ -102,9 +102,16 @@ body {
 
 .hero-image-wrap {
   flex: 1;
-  min-height: 0;
-  background: transparent;
-  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 48px 40px 0;
+}
+
+.hero-image-wrap-inner {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 12px;
   overflow: hidden;
 }
 
@@ -410,8 +417,12 @@ body {
 
   .hero-image-wrap {
     flex: none;
-    height: 64vw;
-    min-height: 240px;
+    padding: 0 24px 24px;
+  }
+
+  .hero-image-wrap-inner {
+    aspect-ratio: 16/9;
+    height: auto;
   }
 
   .hero-heading {
