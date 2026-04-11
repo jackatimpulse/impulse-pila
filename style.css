@@ -179,15 +179,10 @@ body {
   line-height: 1;
 }
 
-.pila-logo {
-  width: min(100px, 22vw);
-  height: auto;
-  display: block;
-}
-
+.pila-logo,
 .impulse-logo {
-  width: min(160px, 36vw);
-  height: auto;
+  height: 32px;
+  width: auto;
   display: block;
 }
 
