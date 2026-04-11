@@ -219,7 +219,81 @@ body {
   color: var(--off-white);
 }
 
-/* ─── Panel 3: Matched for Perfection ─────────────────────────────── */
+/* ─── Panel 3: How to Claim ────────────────────────────────────────── */
+.panel--steps {
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid var(--border);
+  padding: 80px 48px;
+}
+
+.steps-inner {
+  width: 100%;
+  max-width: 900px;
+}
+
+.steps-header {
+  text-align: center;
+  margin-bottom: 52px;
+}
+
+.steps-eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--mid);
+  margin-bottom: 14px;
+}
+
+.steps-heading {
+  font-family: var(--font-serif);
+  font-size: clamp(32px, 4vw, 56px);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  color: var(--black);
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.step-card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.step-num {
+  font-family: var(--font-serif);
+  font-size: 42px;
+  font-weight: 400;
+  color: var(--black);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  opacity: 0.18;
+}
+
+.step-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--black);
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+.step-desc {
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--mid);
+}
+
+/* ─── Panel 4: Matched for Perfection ─────────────────────────────── */
 .panel--matched {
   gap: 0;
   border-top: 1px solid var(--border);
