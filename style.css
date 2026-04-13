@@ -221,6 +221,91 @@ body {
   color: var(--off-white);
 }
 
+/* ─── Panel: Electrifying Action (collage) ────────────────────────── */
+.panel--collage {
+  border-top: 1px solid var(--border);
+  padding: 72px 48px;
+  display: block;
+}
+
+.collage-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.collage-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.collage-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 16px;
+  align-items: start;
+}
+
+.collage-item {
+  border-radius: 14px;
+  overflow: hidden;
+  line-height: 0;
+}
+
+/* Large landscape — top left, spans one row */
+.collage-item--large {
+  grid-column: 1;
+  grid-row: 1;
+  transform: rotate(-1deg);
+}
+
+/* Tall square — right column, top, slightly raised */
+.collage-item--tall {
+  grid-column: 2;
+  grid-row: 1;
+  transform: rotate(1.2deg) translateY(-12px);
+}
+
+/* Wide landscape — bottom left, nudged down */
+.collage-item--wide {
+  grid-column: 1;
+  grid-row: 2;
+  transform: rotate(0.6deg) translateY(8px);
+}
+
+.collage-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.collage-item--large  .collage-img { aspect-ratio: 3/2; }
+.collage-item--tall   .collage-img { aspect-ratio: 1/1; }
+.collage-item--wide   .collage-img { aspect-ratio: 16/9; }
+
+@media (max-width: 768px) {
+  .panel--collage {
+    padding: 56px 24px;
+  }
+
+  .collage-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 16px;
+  }
+
+  .collage-item--large,
+  .collage-item--tall,
+  .collage-item--wide {
+    grid-column: 1;
+    grid-row: auto;
+    transform: none;
+  }
+
+  .collage-item--tall .collage-img { aspect-ratio: 4/3; }
+}
+
 /* ─── Panel 3: How to Claim ────────────────────────────────────────── */
 .panel--steps {
   justify-content: center;
