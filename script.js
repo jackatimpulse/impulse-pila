@@ -23,14 +23,26 @@
   onScroll();
 
   /* ── Panel entrance via IntersectionObserver ─────────────────────── */
-  const observer = new IntersectionObserver((entries) => {
+  const panelObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
+        panelObserver.unobserve(entry.target);
       }
     });
   }, { threshold: 0.05 });
 
-  panels.forEach(panel => observer.observe(panel));
+  panels.forEach(panel => panelObserver.observe(panel));
+
+  /* ── Element-level scroll animations ────────────────────────────── */
+  const elemObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        elemObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('[data-anim]').forEach(el => elemObserver.observe(el));
 })();
