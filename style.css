@@ -246,7 +246,7 @@ body {
 
 .collage-grid {
   display: grid;
-  grid-template-columns: 1.6fr 1fr;
+  grid-template-columns: 1.4fr 1fr 1fr;
   grid-template-rows: auto auto;
   gap: 16px;
   align-items: start;
@@ -258,25 +258,24 @@ body {
   line-height: 0;
 }
 
-/* Large landscape — top left, spans one row */
 .collage-item--large {
   grid-column: 1;
-  grid-row: 1;
-  transform: rotate(-1deg);
+  grid-row: 1 / 3;
 }
 
-/* Tall square — right column, top, slightly raised */
 .collage-item--tall {
   grid-column: 2;
   grid-row: 1;
-  transform: rotate(1.2deg) translateY(-12px);
 }
 
-/* Wide landscape — bottom left, nudged down */
 .collage-item--wide {
-  grid-column: 1;
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.collage-item--square {
+  grid-column: 2 / 4;
   grid-row: 2;
-  transform: rotate(0.6deg) translateY(8px);
 }
 
 .collage-img {
@@ -286,9 +285,10 @@ body {
   display: block;
 }
 
-.collage-item--large  .collage-img { aspect-ratio: 3/2; }
+.collage-item--large  .collage-img { aspect-ratio: 3/4; }
 .collage-item--tall   .collage-img { aspect-ratio: 1/1; }
-.collage-item--wide   .collage-img { aspect-ratio: 16/9; }
+.collage-item--wide   .collage-img { aspect-ratio: 1/1; }
+.collage-item--square .collage-img { aspect-ratio: 16/7; }
 
 @media (max-width: 768px) {
   .panel--collage {
@@ -303,13 +303,14 @@ body {
 
   .collage-item--large,
   .collage-item--tall,
-  .collage-item--wide {
+  .collage-item--wide,
+  .collage-item--square {
     grid-column: 1;
     grid-row: auto;
-    transform: none;
   }
 
-  .collage-item--tall .collage-img { aspect-ratio: 4/3; }
+  .collage-item--large  .collage-img { aspect-ratio: 4/3; }
+  .collage-item--square .collage-img { aspect-ratio: 4/3; }
 }
 
 /* ─── Panel 3: How to Claim ────────────────────────────────────────── */
