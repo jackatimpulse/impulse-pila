@@ -77,7 +77,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 48px 56px;
+  padding: 48px 56px 48px calc(56px + 8%);
   text-align: left;
 }
 
