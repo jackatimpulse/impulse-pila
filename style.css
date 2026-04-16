@@ -92,6 +92,12 @@ body {
   color: var(--black);
 }
 
+.hero-arrow {
+  display: block;
+  margin-top: 32px;
+  opacity: 0.45;
+}
+
 .hero-sub {
   font-size: 13px;
   line-height: 1.6;
