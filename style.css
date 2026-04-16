@@ -552,6 +552,10 @@ body {
     max-width: 100%;
   }
 
+  .hero-arrow {
+    display: none;
+  }
+
   /* Products — stack vertically */
   .panel--products {
     flex-direction: column;
