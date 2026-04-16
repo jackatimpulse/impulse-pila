@@ -280,15 +280,14 @@ body {
 
 .collage-img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
   display: block;
 }
 
-.collage-item--large  .collage-img { aspect-ratio: 3/4; }
-.collage-item--tall   .collage-img { aspect-ratio: 1/1; }
-.collage-item--wide   .collage-img { aspect-ratio: 1/1; }
-.collage-item--square .collage-img { aspect-ratio: 16/7; }
+.collage-item--large  .collage-img { aspect-ratio: unset; }
+.collage-item--tall   .collage-img { aspect-ratio: unset; }
+.collage-item--wide   .collage-img { aspect-ratio: unset; }
+.collage-item--square .collage-img { aspect-ratio: unset; }
 
 @media (max-width: 768px) {
   .panel--collage {
@@ -309,8 +308,8 @@ body {
     grid-row: auto;
   }
 
-  .collage-item--large  .collage-img { aspect-ratio: 4/3; }
-  .collage-item--square .collage-img { aspect-ratio: 4/3; }
+  .collage-item--large  .collage-img { aspect-ratio: unset; }
+  .collage-item--square .collage-img { aspect-ratio: unset; }
 }
 
 /* ─── Panel 3: How to Claim ────────────────────────────────────────── */
