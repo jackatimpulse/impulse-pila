@@ -634,5 +634,9 @@ body {
     bottom: 16px;
     right: 20px;
   }
+
+  .progress-bar {
+    display: none;
+  }
 }
 
